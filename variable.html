@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // let num =1;
+        // // console.log(number); -> 가능
+
+        // console.log(number2); //number = 1
+        // let number = 1; 
+        // //변수에 의미있는걸 담는게 좋음(숫자=number, 합성어 : 소문자로 해서 가운데 들어가는 단어는 앞글자 대문자)
+        // // ->미리 담지 않으면 인식x
+        // console.log(number);
+
+        // number = 2; //number = 2
+        // number = 3; //number = 3
+        // //오른쪽에서 왼쪽으로 인식(오른쪽 실행하고 왼쪽으로)
+
+        // var number2 = 2; 
+        // // -> 미리 담지 않아도 인식
+        // console.lof(number2);
+
+        // const number3 =10;
+        // number3 = 100;
+
+        //원시형 데이터 타입 
+        //1. 숫자형 - 변수에 숫자가 들어가는 경우
+        // let num = 1;
+        // let num2 =2;
+        // console.log(typeof num);
+        // //2. 문자형 - 변수에 문자가 들어가는 경우
+        // let str = 'javascript';
+        // let str2 = "javascript";
+        // console.log(typeof str);
+        // //3. 불리언(bool) - true / false 존재, 참 거짓을 판단할때
+        // let bool = true;
+        // bool = false;
+        // console.log(typeof bool);
+        // //5. null - 빈 값(변수를 초기화 하지않음) 0 = x
+        // let variable = null;
+        // console.log(variable)
+        // //6. undefined - 변수 자체가 선언x
+        // console.log(data);
+        // //7.NaN - not a number : 문자를 숫자로 바꾸는데, 숫자 외 다른 문자가 있을 때 나타내는 뜻
+
+        // //참조형 데이터 타입
+        // let aaa = 0x1112; //주소에 가서 데이터를 가져옴
+
+        //자료형 변환
+        //문자 -> 숫자로 변환
+        let str3 = "12345aaa";
+        let str4 ="123.123"; 
+
+        console.log(typeof str3);
+        //1. Number() - 소수점까지 포함해서 데이터를 변환, 숫자에 문자가 포함되어 있으면 숫자가 안됨.
+        let num3 = Number(str3);
+
+        console.log(typeof num3);
+        console.log(num3);
+
+        let num5 = Number(str4);
+        console.log(num5);
+
+        //2. parseInt() - 소수점을 제외하고 점수만 변환, 숫자에 문자가 포함되어 있으면 문자 빼고 숫자로 변환.
+        let num4 = parseInt(str3);
+        // console.log(parseFloat(str4)); *참고 - 소수점을 가진 문자를 실수형으로 변환할때 사용
+
+        console.log(num4);
+
+        let num6 = parseInt(str4);
+        console.log(num6);
+
+        //숫자 -> 문자로 변환
+        //1. toString() - null 인식못함
+
+        let str5 = num4.toString();
+        console.log(typeof str5);
+        console.log(str5);
+
+        //2. String() - 이거 더 많이씀
+        
+        num4 = null
+        let str6 = String(num4);
+        console.log(typeof str6);
+        console.log(str6);
+
+        //빈 문자열
+        //문자 = 'A'  ,  문자열 = "ASDFG"
+        let str7 = '';
+    </script>
+</body>
+</html>
